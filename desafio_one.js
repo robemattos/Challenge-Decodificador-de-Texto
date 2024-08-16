@@ -1,24 +1,19 @@
 function criptografar() {
     //let i = 1;
     let frase = document.querySelector('input').value;
+    responsiveVoice.speak(frase, 'Brazilian Portuguese Female', {rate: 1.2});
+
     let resultado = frase.replace(/e/g, 'enter')
     .replace(/i/g, 'imes')
     .replace(/a/g, 'ai')
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat');
-    
     let resultadoDiv = document.getElementById('resultado');
     resultadoDiv.textContent = resultado;
     console.log(resultado);
 }
 
-// function copiaTexto() {
-//     let criptografia = document.getElementById('resultado').innerText;
-//     let frase = document.querySelector('input');
-//     frase.value = '';
-//     console.log(criptografia);
-// }
-
+//////////// Copia o texto encriptado para a área de transferência e limpa o campo "Digite seu texto"
 function copiaTexto() {
     let criptografia = document.getElementById('resultado').innerText;
     navigator.clipboard.writeText(criptografia);
@@ -27,6 +22,7 @@ function copiaTexto() {
    // console.log(criptografia);
 }
 
+//////////// Cola o texto encriptado no campo "Digite seu texto"
 function colaTexto() {
     let frase = document.querySelector('input');
     navigator.clipboard.readText();
@@ -35,7 +31,7 @@ function colaTexto() {
     console.log(criptografia);
     
 }
-//////////// Função limparTexto com erro, pois, não está limpando o campo Resultado, somente o campo Digite seu texto
+//////////// Limpa os campos "Digite seu texto" e "Resultado"
 function limparTexto() {
     let frase = document.querySelector('input');
     frase.value = '';
@@ -44,9 +40,8 @@ function limparTexto() {
     console.log(criptografia);
     let resultadoDiv = document.getElementById('resultado');
     resultadoDiv.textContent = '';
-   
 }
-//////////
+
 function descriptar() {
     let frase = document.querySelector('input').value;
     let resultado = frase.replace(/enter/g, 'e')
