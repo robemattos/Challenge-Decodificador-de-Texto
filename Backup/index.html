@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--<div class="container__conteudo"> -->
+        <div>
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Desafio Oracle Next Education</h1>
+                    <h2>Digite seu texto</h2>  
+                </div>
+                <input type="text" class="container__input">
+                <p>Obs: Apenas letras minúsculas e sem acento.</p>
+                <div class="container__botoes">
+                    <button onclick="criptografar()" class="container__botao">Criptografar</button>
+                    <button onclick="descriptar()" class="container__botao">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container__informacoes">
+            <div class="container__texto">
+                <h2>Resultado:</h2>
+                <div class="container__resultado">
+                    <p id="resultado"></p>
+                </div>
+               
+            </div>
+            <div class="container__botoes">
+                <button onclick="copiaTexto()" class="container__botao">Copiar</button>
+                <button onclick="colaTexto()" class="container__botao">Colar</button>
+                <button onclick="limparTexto()" class="container__botao">Limpar</button>
+            </div>
+        </div>
+    </div>
+    <script src="desafio_one.js" defer></script>
+</body>
+</html>
