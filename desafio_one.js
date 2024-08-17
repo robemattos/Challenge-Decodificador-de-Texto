@@ -28,8 +28,7 @@ function colaTexto() {
     navigator.clipboard.readText();
     let criptografia = document.getElementById('resultado').innerText;
     frase.value = criptografia;
-    console.log(criptografia);
-    
+    console.log(criptografia);    
 }
 //////////// Limpa os campos "Digite seu texto" e "Resultado"
 function limparTexto() {
