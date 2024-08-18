@@ -34,6 +34,6 @@
 <h2>Autor</h2>
   <div>
     <img src="\imagens\Foto.png" width="150" height="180">
-    <p align="left">Robson Mattos</p>
+    <p>Robson Mattos</p>
   </div>
 
