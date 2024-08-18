@@ -31,5 +31,5 @@
 </div>
 
 <h2>Autor</h2>
-  [imagens/foto.png](https://github.com/robemattos/Challenge-Decodificador-de-Texto/blob/main/imagens/foto.png)
+  <img src="C:\Robson\Cursos\Oracle Nest Education\Iniciante em Programação\Desafio ONE - Nova\imagens\Foto.png">
 
