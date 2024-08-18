@@ -31,5 +31,5 @@
 </div>
 
 <h2>Autor</h2>
-  imagens/foto.png
+  [imagens/foto.png](https://github.com/robemattos/Challenge-Decodificador-de-Texto/blob/main/imagens/foto.png)
 
