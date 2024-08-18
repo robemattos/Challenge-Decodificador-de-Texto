@@ -31,5 +31,5 @@
 </div>
 
 <h2>Autor</h2>
-  <img src="C:\Robson\Cursos\Oracle Nest Education\Iniciante em Programação\Desafio ONE - Nova\imagens\Foto.png">
+  <img src="\imagens\Foto.png">
 
