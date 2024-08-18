@@ -32,3 +32,5 @@
 
 <h2>Autor</h2>
   <img src="/imagens/foto.jpeg">
+  ![Foto](https://github.com/user-attachments/assets/90f16ccf-6d16-4c0d-9a80-5f5685e87444)
+
