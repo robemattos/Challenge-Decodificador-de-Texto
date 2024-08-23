@@ -1,6 +1,12 @@
+document.querySelector('input').addEventListener('input', function() {
+    // Converte o texto digitado para minúsculas
+    this.value = this.value.toLowerCase();
+});
+
 function criptografar() {
     //let i = 1;
     let frase = document.querySelector('input').value;
+    frase = frase.toLowerCase();
     responsiveVoice.speak(frase, 'Brazilian Portuguese Female', {rate: 1.2});
 
     let resultado = frase.replace(/e/g, 'enter')
@@ -9,7 +15,7 @@ function criptografar() {
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat');
     let resultadoDiv = document.getElementById('resultado');
-    resultadoDiv.textContent = resultado;
+    resultadoDiv.textContent = resultado.toLowerCase();
     console.log(resultado);
 }
 
@@ -28,7 +34,7 @@ function colaTexto() {
     navigator.clipboard.readText();
     let criptografia = document.getElementById('resultado').innerText;
     frase.value = criptografia;
-    console.log(criptografia);    
+    responsiveVoice.speak(criptografia, 'Brazilian Portuguese Female', {rate: 1.2});
 }
 //////////// Limpa os campos "Digite seu texto" e "Resultado"
 function limparTexto() {
@@ -52,7 +58,7 @@ function descriptar() {
 
     let resultadoDiv = document.getElementById('resultado');
     resultadoDiv.textContent = resultado;
-    console.log(resultado);
+    responsiveVoice.speak(resultado, 'Brazilian Portuguese Female', {rate: 1.2});
 }
 
 
