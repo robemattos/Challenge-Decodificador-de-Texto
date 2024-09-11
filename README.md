@@ -23,6 +23,10 @@
     <ul><li>Esse botão "limpa" os campos "Digite seu texto" e "Resultado".</li></ul>
 </div>
 
+<ul>
+  <li>URL: https://decodificadorde-extos.vercel.app/</li>
+</ul>
+
 <h2>Tecnologias</h2>
 
 <div>
