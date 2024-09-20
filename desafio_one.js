@@ -4,7 +4,12 @@ document.querySelector('input').addEventListener('input', function() {
 });
 
 function criptografar() {
+<<<<<<< HEAD
     let frase = document.querySelector('.container__input').value;
+=======
+    //let i = 1;
+    let frase = document.querySelector('input').value;
+>>>>>>> af81e40887835fd0c7d6551b94fab44beacbbd2a
     frase = frase.toLowerCase();
     responsiveVoice.speak(frase, 'Brazilian Portuguese Female', {rate: 1.2});
 
